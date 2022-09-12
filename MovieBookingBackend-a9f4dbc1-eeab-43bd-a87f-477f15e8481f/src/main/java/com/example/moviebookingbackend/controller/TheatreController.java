@@ -31,7 +31,7 @@ public class TheatreController {
         return service.saveData(theatre);
     }
 
-    //theatre login
+
     @PostMapping("/TheatreLogin")
     public int loginUser(@RequestBody TheatreModel theatreModel) throws IllegalAccessException {
         String tempEmailId = theatreModel.getTheatreEmail();
